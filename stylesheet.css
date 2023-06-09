@@ -1,0 +1,120 @@
+body {
+  /*background-image: url("img/trianglify.png");*/
+  background-image: url("img/test.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin for spacing between the title and the box */
+
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card1 {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 800px; /* Adjust the width as desired */
+  max-width: 100%;
+  height: 500px; /* Adjust the height as desired */
+  font-size: 30px;
+  text-align: center;
+}
+
+.title {
+  color: rgb(0, 0, 0); /* Set text color to white */
+  text-align: center;
+  font-size: 70px; /* Adjust the font size as desired */
+  /*text-decoration: underline; /* Add underline */
+  text-shadow: 0 0 5px black; /* Add outline effect */
+  font-size: 5vw;
+  font-family: 'Righteous', cursive;
+}
+
+.cardTitle{
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.cardtext1{
+  margin-top: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #dddddd;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-top: -5vh;
+}
+
+.navigation a {
+  margin: 0 10px; /* Add margin to create spacing between the images */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #888888;
+  margin: 0 5px;
+  cursor: pointer;
+
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.social {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.cardtext1 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 8vw;
+  }
+
+  .card1 {
+    font-size: 10px;
+  }
+
+  .navigation {
+    margin-top: -10vh;
+  }
+  .cardtext1 {
+    font-size: 40px;
+  }
+}
