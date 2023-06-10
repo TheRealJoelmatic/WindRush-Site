@@ -1,23 +1,43 @@
 // script.js
+/*
 
+I have not JS in a hot min so I hope the code is alright
+
+*/
+
+// Variable to keep track of the current page
 var Page = 1;
 
+// Function to change the text on the card based on the page number and add animtions 
 function changeText(addOrTakeAway) {
+    // Get references to the HTML elements
     var cardText = document.getElementById("cardText");
     var cardTitle = document.getElementById("cardTitle");
+    var moveAlong = document.getElementById("moveAlong");
 
+    // Remove the fadeIn class from the elements
+    console.log("Removing fadeIn class");
+    cardTitle.classList.remove("fadeIn");
+    cardText.classList.remove("fadeIn");
+    moveAlong.classList.remove("fadeIn");
+
+    // Update the page number based on what arrow was pressed
     if (addOrTakeAway) {
         Page++;
     } else {
         Page--;
     }
 
+    // Stops the user from being stupid
     if (Page < 1) Page = 1;
-    if (Page > 8) Page = 8;
+    if (Page > 9) Page = 9; 
     console.log("Page:" + Page);
 
+    // Update the active circle 
     circlePage(Page);
 
+     // Delay the text change to allow for the fade-out effect
+    setTimeout(function() {
     if (Page === 1) {
         cardTitle.innerText = "Introduction";
         cardText.innerText = "The Windrush scandal, which unfolded in the United Kingdom in 2018, exposed a grave injustice perpetrated against the Caribbean immigrants known as the Windrush generation. This aims to delve into the details of the Windrush scandal, shedding light on its origins, the impact it had on affected individuals, and the subsequent efforts made to address this historical injustice.";
@@ -49,12 +69,25 @@ function changeText(addOrTakeAway) {
         cardTitle.innerText = "Conclusion";
         cardText.innerText = "The Windrush scandal exposed mistreatment and disregard towards the Windrush generation, revealing a dark chapter in British immigration history. This essay has outlined the scandal's origins, impact on individuals, and subsequent efforts to rectify the injustice. It serves as a reminder of the need for fair and compassionate immigration policies that respect the contributions and rights of all residents.";
     }
+    else if (Page === 9) {
+        cardTitle.innerText = "Credits";
+        cardText.innerHTML = "This website was created by Joel. You can discover more about my work on <a href='https://github.com/TheRealJoelmatic'>https://github.com/TheRealJoelmatic</a>.";
+    }
+    // Add the fadeIn class back to the elements for fade-in effect
+    console.log("Adding fadeIn class");
+    cardTitle.classList.add("fadeIn");
+    cardText.classList.add("fadeIn");
+    moveAlong.classList.add("fadeIn");
+}, 100);
 }
 
+// Function to update the active circle
 function circlePage(pageNumber) {
     var circles = document.getElementsByClassName("circle");
 
+    // Gets all the circles
     for (var i = 0; i < circles.length; i++) {
+        // Adds or take way active depending on the page
         if (i === pageNumber - 1) {
             circles[i].classList.add("active");
         } else {
@@ -63,7 +96,9 @@ function circlePage(pageNumber) {
     }
 }
 
+// Function to run when the window loads
 window.onload = function() {
+    // Call the changeText function to set up the first page
     changeText();
   };
 
