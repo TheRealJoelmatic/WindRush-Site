@@ -56,3 +56,7 @@ This project is licensed under the [MIT License](LICENSE).
 For any inquiries or suggestions regarding the WindRush website, please contact me on discord at Joelmatic#8817
 
 Thank you for visiting our website and joining us in demystifying the Windrush scandal! Together, we can make a difference.
+
+##
+
+![Snake animation](https://github.com/madushadhanushka/github-readme/blob/output/github-contribution-snake.svg)
