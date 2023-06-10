@@ -1,9 +1,4 @@
 // script.js
-/*
-
-I have not JS in a hot min so I hope the code is alright
-
-*/
 
 // Variable to keep track of the current page
 var Page = 1;
