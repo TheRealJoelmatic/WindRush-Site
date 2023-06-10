@@ -5,7 +5,7 @@ Welcome to the WindRush website! This website aims to shed light on the Windrush
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-- [Features](#features)
+- [Pictures](#Pictures)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
