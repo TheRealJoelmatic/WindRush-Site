@@ -24,9 +24,8 @@ The Windrush scandal refers to a series of events in the United Kingdom that aff
 
 To run this website locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/WindRush-Website.git`
-2. Navigate to the project directory: `cd WindRush-Website`
-3. Open the `index.html` file in your web browser.
+1. Press "Code: and then "Download Zip"
+2. Open the `index.html` file in your web browser.
 
 ## Usage
 
